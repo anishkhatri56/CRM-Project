@@ -78,14 +78,21 @@ WSGI_APPLICATION = 'CRM.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME':'testdb',
+#         'USER' : 'postgres',
+#         'PASSWORD' : 'Savyanish56#',
+#         'HOST': 'localhost',
+#         'PORT' : '5433'
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'testdb',
-        'USER' : 'postgres',
-        'PASSWORD' : 'Savyanish56#',
-        'HOST': 'localhost',
-        'PORT' : '5433'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase', # This is where you put the name of the db file. 
+                 # If one doesn't exist, it will be created at migration time.
     }
 }
 
